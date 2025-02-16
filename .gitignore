@@ -60,9 +60,13 @@ sysinfo.txt
 *.aab
 *.unitypackage
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 *.unitypackage.meta
 >>>>>>> ffe8c1e78d6c610c35ae7a3ad1732c37e5e70c1a
+=======
+*.unitypackage.meta
+>>>>>>> c21abaa7c1db9969a0c4dc90dec5245589b6e083
 *.app
 
 # Crashlytics generated file
