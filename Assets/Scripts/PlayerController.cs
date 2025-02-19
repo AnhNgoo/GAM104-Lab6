@@ -118,10 +118,12 @@ public class PlayerController : MonoBehaviour
 
     private void UpdateAnimation()
     {
-        bool isJumping = !isGrounded;
+        bool isJumping = !isGrounded && rb.linearVelocity.y > 0;
+        bool isFalling = !isGrounded && rb.linearVelocity.y < 0;
         bool isRunning = xDir != 0;
         animator.SetBool("isRunning", isRunning);
         animator.SetBool("isJumping", isJumping);
+        animator.SetBool("isFalling", isFalling);
     }
 
     private void OnCollisionEnter2D(Collision2D other)   
@@ -149,7 +151,7 @@ public class PlayerController : MonoBehaviour
             AudioManager.instance.StopBMGMusic();
             winText.SetActive(true);
             Overlay.SetActive(true);
-            speedMovement = 0;
+            Time.timeScale = 0;
         }
     }
 
