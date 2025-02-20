@@ -60,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -151,20 +151,20 @@ TextureImporter:
       name: Blink (42x42)_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 4
-        width: 34
-        height: 34
+        x: 0
+        y: 0
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4c67c92da0ce8e440800000000000000
-      internalID: 4965478120403269316
+      spriteID: 996efcd2ebe767943b34935a8793b065
+      internalID: -762199196
       vertices: []
       indices: 
       edges: []
@@ -173,20 +173,20 @@ TextureImporter:
       name: Blink (42x42)_1
       rect:
         serializedVersion: 2
-        x: 46
-        y: 4
-        width: 34
-        height: 34
+        x: 42
+        y: 0
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d71e5cbbb11ccfc60800000000000000
-      internalID: 7853364175085887869
+      spriteID: ea4128bd7befcb647ba73a325b831fb0
+      internalID: 1955725735
       vertices: []
       indices: 
       edges: []
@@ -195,20 +195,20 @@ TextureImporter:
       name: Blink (42x42)_2
       rect:
         serializedVersion: 2
-        x: 88
-        y: 4
-        width: 34
-        height: 34
+        x: 84
+        y: 0
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b4305ac705618b230800000000000000
-      internalID: 3654695632555541323
+      spriteID: ef79f1b5297ea7043949c9111dd60a1b
+      internalID: 624948058
       vertices: []
       indices: 
       edges: []
@@ -217,20 +217,20 @@ TextureImporter:
       name: Blink (42x42)_3
       rect:
         serializedVersion: 2
-        x: 130
-        y: 4
-        width: 34
-        height: 34
+        x: 126
+        y: 0
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e78895d5d6c272490800000000000000
-      internalID: -7771193783775295362
+      spriteID: efd7b16796a872f428b264a01f7f0932
+      internalID: -789615300
       vertices: []
       indices: 
       edges: []
@@ -239,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2b099e644c802784fbfb49d6004bfb4a
     internalID: 0
     vertices: []
     indices: 
@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blink (42x42)_0: -762199196
+      Blink (42x42)_1: 1955725735
+      Blink (42x42)_2: 624948058
+      Blink (42x42)_3: -789615300
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

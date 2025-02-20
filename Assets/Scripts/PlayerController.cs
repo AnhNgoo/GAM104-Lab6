@@ -14,7 +14,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public TextMeshProUGUI scoreText;
     [SerializeField] public GameObject winText;
     [SerializeField] public GameObject Overlay;
-    [SerializeField] public Animator animator;
+    [SerializeField] public GameObject fruit;
+    private Animator animator;
     private bool isGrounded;
     private int score;
     bool moveButton;
@@ -38,6 +39,7 @@ public class PlayerController : MonoBehaviour
         HandleJump();
         UpdateAnimation();
         Move();
+        CheckWin();
     }
 
     void FixedUpdate()
@@ -134,7 +136,6 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);  
             score++;  
             UpdateScore();  
-            CheckWin();  
         }    
     }
 
@@ -145,7 +146,7 @@ public class PlayerController : MonoBehaviour
 
     private void CheckWin()
     {
-        if (score >= 24)
+        if (fruit.transform.childCount == 0)
         {
             AudioManager.instance.PlaySFX(AudioManager.instance.WinSFX);
             AudioManager.instance.StopBMGMusic();
