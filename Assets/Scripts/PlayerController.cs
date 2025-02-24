@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void Start(){
+        Application.targetFrameRate = 50;
         winText.SetActive(false);
         Overlay.SetActive(false);
         UpdateScore();
@@ -128,7 +129,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isFalling", isFalling);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)   
+    private void OnTriggerEnter2D(Collider2D other)   
     {  
         if (other.gameObject.CompareTag("Fruits"))  
         {  
